@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sellit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name = "android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SellIt"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.SplashScreen">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".Activity.ModelFromSeries" />
+        <activity android:name=".Activity.ModelActivity" />
+        <activity android:name=".Activity.SellingActivity" />
+        <activity android:name=".Activity.WebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="android.app.searchable"
+            android:resource="@xml/searchable" />
+    </application>
+
+</manifest>

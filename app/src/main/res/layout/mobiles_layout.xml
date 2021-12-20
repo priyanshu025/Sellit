@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="9dp"
+            android:fontFamily="@font/metrophobic"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="104dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/iphonee"
+                    android:id="@+id/phoneImage" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/metrophobic"
+                    android:text="Iphone 7"
+                    android:padding="6dp"
+                    android:id="@+id/phoneName"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</LinearLayout>
